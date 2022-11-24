@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "628246122307",
+    "project_id": "secuton-cfdf6",
+    "storage_bucket": "secuton-cfdf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628246122307:android:37d42ccca901502d1ea9f6",
+        "android_client_info": {
+          "package_name": "com.shagil.secuton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628246122307-qmrv0m6n1s8jfkhuhg3qj1dojhm3jsb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtojPiMpbci2oUMvginV3FAvNbPy1EADQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628246122307-qmrv0m6n1s8jfkhuhg3qj1dojhm3jsb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

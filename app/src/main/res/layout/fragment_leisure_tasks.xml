@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.home.leisureTask.LeisureTasksFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/leisure_task_cardview">
+            <LinearLayout
+                android:id="@+id/new_leisure_task_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/secuton_primary"
+                    android:elevation="7dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/secuton_primary_variant"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:elevation="5dp"
+                                android:src="@drawable/app_icon" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:text="New Leisure Activity"
+                                    android:textColor="@color/white"
+                                    android:textSize="17sp" />
+
+                                <ImageView
+                                    android:id="@+id/create_new_leisure_activity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_baseline_edit_24" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/leisure_title_textview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/white"
+                                android:background="@color/secuton_primary_variant"
+                                android:text="Title of your Leisure Activity"
+                                android:textSize="16sp"
+                                android:padding="5dp"/>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/leisure_title_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/white"
+                                android:hint="Title..."
+                                android:textSize="16sp"
+                                android:background="@color/secuton_primary_variant"
+                                app:backgroundTint="@color/secuton_primary_variant"
+                                android:textCursorDrawable="@color/white"
+                                android:visibility="gone"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/leisure_description_textview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/white"
+                                android:background="@color/secuton_primary_variant"
+                                android:text="Description of your Leisure Activity"
+                                android:textSize="16sp"
+                                android:padding="5dp"/>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/leisure_description_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/white"
+                                android:hint="Description..."
+                                android:textSize="16sp"
+                                android:background="@color/secuton_primary_variant"
+                                app:backgroundTint="@color/secuton_primary_variant"
+                                android:textCursorDrawable="@color/white"
+                                android:visibility="gone"/>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/post_new_leisure_container"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:visibility="gone">
+
+                                <!--<Button
+                                    android:id="@+id/new_reminder_post_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="@drawable/buzz_button_background"
+                                    android:gravity="center"
+                                    android:text="Post"
+                                    android:textSize="12sp"
+                                    android:visibility="visible"/>-->
+
+                                <ImageView
+                                    android:id="@+id/post_new_leisure_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_baseline_send_24"/>
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/leisure_task_epoxy_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_below="@id/leisure_task_cardview"
+            tools:listitem="@layout/model_leisure_task_item"/>
+    </RelativeLayout>
+
+</FrameLayout>

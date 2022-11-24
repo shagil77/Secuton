@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/routineTaskFragment"
+        android:icon="@drawable/ic_baseline_routine_tasks"
+        android:title="Routine" />
+    <item
+        android:id="@+id/todosFragment"
+        android:icon="@drawable/ic_baseline_todos"
+        android:title="TODOs" />
+    <item
+        android:id="@+id/leisureTasksFragment"
+        android:icon="@drawable/ic_baseline_leisure_tasks"
+        android:title="Leisure" />
+</menu>
